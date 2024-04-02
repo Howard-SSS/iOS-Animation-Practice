@@ -1,5 +1,5 @@
 //
-//  CATransform3DViewController.swift
+//  TransformViewController.swift
 //  iOS-Animation-Practice
 //
 //  Created by Howard-Zjun on 2024/03/31.
@@ -7,26 +7,8 @@
 
 import UIKit
 
-class CATransform3DViewController: UIViewController {
+class TransformViewController: BasicViewController {
 
-    lazy var naviView: UIView = {
-        let naviView = UIView(frame: .init(x: 0, y: 0, width: view.width, height: 200))
-        naviView.backgroundColor = .clear
-        naviView.isUserInteractionEnabled = true
-        let underLine = UIView(frame: .init(x: 0, y: naviView.height - 1, width: naviView.width, height: 1))
-        underLine.backgroundColor = .gray
-        naviView.addSubview(underLine)
-        return naviView
-    }()
-    
-    lazy var backBtn: UIButton = {
-        let backBtn = UIButton(type: .close)
-        backBtn.frame = .init(x: 10, y: 60, width: 40, height: 40)
-        backBtn.addTarget(self, action: #selector(touchBackBtn), for: .touchUpInside)
-        backBtn.tintColor = .blue
-        return backBtn
-    }()
-    
     lazy var cube: CATransformLayer = {
         let cube = CATransformLayer()
         cube.frame = view.bounds
@@ -35,11 +17,8 @@ class CATransform3DViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         view.isUserInteractionEnabled = true
         view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(panGesture)))
-        view.addSubview(naviView)
-        naviView.addSubview(backBtn)
         
         let layerFrame: CGRect = .init(x: (view.width - 100) * 0.5, y: (view.height - 100) * 0.5, width: 100, height: 100)
         let f1 = CATransform3DMakeTranslation(0, 0, 50)
@@ -89,10 +68,6 @@ class CATransform3DViewController: UIViewController {
         cube.addSublayer(c6)
         
         view.layer.addSublayer(cube)
-    }
-    
-    @objc func touchBackBtn() {
-        navigationController?.popViewController(animated: true)
     }
     
     @objc func panGesture(_ sender: UIPanGestureRecognizer) {

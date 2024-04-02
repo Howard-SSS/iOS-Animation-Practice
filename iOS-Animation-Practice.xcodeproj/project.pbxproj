@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		393994C22BBBBFC8002D6149 /* ReplicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393994C12BBBBFC8002D6149 /* ReplicatorViewController.swift */; };
+		393994C42BBBC080002D6149 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393994C32BBBC080002D6149 /* BasicViewController.swift */; };
 		394827BF2BB96A3D00759A5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394827BE2BB96A3D00759A5F /* AppDelegate.swift */; };
 		394827C12BB96A3D00759A5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394827C02BB96A3D00759A5F /* SceneDelegate.swift */; };
 		394827C32BB96A3D00759A5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394827C22BB96A3D00759A5F /* ViewController.swift */; };
 		394827C62BB96A3D00759A5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394827C42BB96A3D00759A5F /* Main.storyboard */; };
 		394827C82BB96A3E00759A5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 394827C72BB96A3E00759A5F /* Assets.xcassets */; };
 		394827CB2BB96A3E00759A5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394827C92BB96A3E00759A5F /* LaunchScreen.storyboard */; };
-		394827D72BB96C3F00759A5F /* CATransform3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394827D62BB96C3F00759A5F /* CATransform3DViewController.swift */; };
+		394827D72BB96C3F00759A5F /* TransformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394827D62BB96C3F00759A5F /* TransformViewController.swift */; };
 		394827D92BB96E2100759A5F /* MoreExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394827D82BB96E2100759A5F /* MoreExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		393994C12BBBBFC8002D6149 /* ReplicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicatorViewController.swift; sourceTree = "<group>"; };
+		393994C32BBBC080002D6149 /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 		394827BB2BB96A3D00759A5F /* iOS-Animation-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Animation-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		394827BE2BB96A3D00759A5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		394827C02BB96A3D00759A5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +30,7 @@
 		394827C72BB96A3E00759A5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		394827CA2BB96A3E00759A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		394827CC2BB96A3E00759A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		394827D62BB96C3F00759A5F /* CATransform3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATransform3DViewController.swift; sourceTree = "<group>"; };
+		394827D62BB96C3F00759A5F /* TransformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformViewController.swift; sourceTree = "<group>"; };
 		394827D82BB96E2100759A5F /* MoreExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		393994C02BBBBFA2002D6149 /* Replcator */ = {
+			isa = PBXGroup;
+			children = (
+				393994C12BBBBFC8002D6149 /* ReplicatorViewController.swift */,
+			);
+			path = Replcator;
+			sourceTree = "<group>";
+		};
 		394827B22BB96A3D00759A5F = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +72,8 @@
 		394827BD2BB96A3D00759A5F /* iOS-Animation-Practice */ = {
 			isa = PBXGroup;
 			children = (
-				394827D52BB96C0600759A5F /* CATransform3D */,
+				393994C02BBBBFA2002D6149 /* Replcator */,
+				394827D52BB96C0600759A5F /* Transform */,
 				394827BE2BB96A3D00759A5F /* AppDelegate.swift */,
 				394827C02BB96A3D00759A5F /* SceneDelegate.swift */,
 				394827C22BB96A3D00759A5F /* ViewController.swift */,
@@ -69,16 +82,17 @@
 				394827C92BB96A3E00759A5F /* LaunchScreen.storyboard */,
 				394827CC2BB96A3E00759A5F /* Info.plist */,
 				394827D82BB96E2100759A5F /* MoreExtension.swift */,
+				393994C32BBBC080002D6149 /* BasicViewController.swift */,
 			);
 			path = "iOS-Animation-Practice";
 			sourceTree = "<group>";
 		};
-		394827D52BB96C0600759A5F /* CATransform3D */ = {
+		394827D52BB96C0600759A5F /* Transform */ = {
 			isa = PBXGroup;
 			children = (
-				394827D62BB96C3F00759A5F /* CATransform3DViewController.swift */,
+				394827D62BB96C3F00759A5F /* TransformViewController.swift */,
 			);
-			path = CATransform3D;
+			path = Transform;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +169,10 @@
 				394827C32BB96A3D00759A5F /* ViewController.swift in Sources */,
 				394827BF2BB96A3D00759A5F /* AppDelegate.swift in Sources */,
 				394827D92BB96E2100759A5F /* MoreExtension.swift in Sources */,
-				394827D72BB96C3F00759A5F /* CATransform3DViewController.swift in Sources */,
+				394827D72BB96C3F00759A5F /* TransformViewController.swift in Sources */,
 				394827C12BB96A3D00759A5F /* SceneDelegate.swift in Sources */,
+				393994C22BBBBFC8002D6149 /* ReplicatorViewController.swift in Sources */,
+				393994C42BBBC080002D6149 /* BasicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
